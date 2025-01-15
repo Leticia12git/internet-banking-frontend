@@ -1,0 +1,26 @@
+<div class="nav-bar">
+  Produtos | Serviços | Conteudo |
+  <form (ngSubmit)="onSubmit()" style="display: inline">
+    <label for="agency">Agência:</label>
+    <input
+      type="text"
+      id="agency"
+      [(ngModel)]="loginData.agency"
+      name="agency"
+      placeholder="Agência"
+      required
+    />
+    <label for="account">Conta:</label>
+    <input
+      type="text"
+      id="account"
+      [(ngModel)]="loginData.account"
+      name="account"
+      placeholder="Conta"
+      required
+    />
+    <button type="submit">Acesso</button>
+  </form>
+</div>
+
+<footer>Direitos reservados a Leticia</footer>

@@ -1,0 +1,80 @@
+/* Envolvendo o sidebar e o conteúdo */
+.wrapper {
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px; /* Largura do menu */
+  background-color:#007bff;
+  color: white;
+  padding: 15px;
+  height: 100vh; /* Fazendo o sidebar ocupar toda a altura da tela */
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 20px; /* Espaço entre os itens */
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar ul li a mat-icon {
+  margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
+
+.sidebar ul li a:hover {
+  color: #007bff;
+}
+
+/* Conteúdo */
+.content {
+  flex-grow: 1; /* Faz o conteúdo ocupar o restante do espaço */
+  padding: 20px;
+}
+
+/* Container para os cards */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+
+  padding: 20px;
+}
+
+.teste {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 180px; /* Largura dos cards */
+  text-align: center;
+  background-color: #007bff; /* Cor de fundo semelhante à imagem */
+}
+
+.mat-card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mat-card-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.mat-card-content p {
+  font-size: 14px;
+}
