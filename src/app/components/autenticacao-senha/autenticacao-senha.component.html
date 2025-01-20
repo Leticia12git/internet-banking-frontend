@@ -1,20 +1,34 @@
 <div class="container">
   <div class="login-box">
-    <h2>Olá Leticia</h2>
-    <p>Agência xxx | Conta xxxxxx-x</p>
+    <h2>Olá, Leticia</h2>
+    <p>Agência 310 | Conta 791623-0</p>
     <div class="tabs">
       <button>Validação</button>
       <button>Senha</button>
     </div>
     <div class="form">
-      <p>
-        Informe a sua chave de segurança com 6 digitos que aparece no seu App
-      </p>
-      <label for="email">Digite sua senha </label>
-      <input type="password" id="password" name="password" />
-      <button class="advance-button" (click)="avancarParaSenha()">
-        Avançar para a Senha
-      </button>
+      <p>Informe sua senha de 4 dígitos, clicando no teclado abaixo</p>
+      <div class="password-input">
+        <input type="password" maxlength="1" disabled />
+        <input type="password" maxlength="1" disabled />
+        <input type="password" maxlength="1" disabled />
+        <input type="password" maxlength="1" disabled />
+      </div>
+      <div class="number-pad">
+        <button (click)="addDigit(9)">9</button>
+        <button (click)="addDigit(0)">0</button>
+        <button (click)="addDigit(7)">7</button>
+        <button (click)="addDigit(3)">3</button>
+        <button (click)="addDigit(6)">6</button>
+        <button (click)="addDigit(8)">8</button>
+        <button (click)="addDigit(2)">2</button>
+        <button (click)="addDigit(4)">4</button>
+        <button (click)="addDigit(1)">1</button>
+        <button (click)="addDigit(5)">5</button>
+        <button class="clear-button" (click)="clearPassword()">Limpar</button>
+      </div>
+      <button class="access-button" (click)="access()">Acessar</button>
+      <a href="#" class="forgot-password">Esqueci minha senha</a>
     </div>
   </div>
 </div>
